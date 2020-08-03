@@ -1,0 +1,226 @@
+/*  Général  */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(105, 105, 105);
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.row {
+    margin: 0 -10px;
+}
+
+.col {
+    margin: 0 10px;
+    float: left;
+}
+
+.col--33 {
+    width: 300px;
+}
+
+.col--50 {
+    width: 460px;
+}
+
+.is-dark {
+    color: #fff;
+}
+
+.is-centered {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3.05em;
+    /* 55px/18px (18=format de base sur le web) */
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 1.66667em;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    color: rgb(43, 65, 77);
+}
+
+p {
+    line-height: 1.666667em;
+}
+
+hr {
+    width: 20px;
+    height: 2px;
+    background-color: rgb(204, 208, 210);
+    border: none;
+}
+
+::placeholder {
+    color: rgb(204, 208, 210);
+}
+
+input {
+    padding: 18px 30px;
+    border-radius: 4px;
+    border: 1px solid #fff;
+}
+
+input[type="submit"] {
+    border: none;
+}
+
+.btn {
+    font-size: 1.11111em;
+    color: rgb(38, 166, 209);
+    text-transform: uppercase;
+    background-color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 18px 30px;
+    border-radius: 4px;
+    display: table-cell;
+}
+
+.floatl {
+    float: left;
+}
+
+.floatr {
+    float: right;
+}
+
+#services,
+#testimonial {
+    padding: 110px 0;
+}
+
+/*  Header  */
+header {
+    padding: 70px 0 25px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+.nav-social {
+    text-align: right;
+    margin-right: -12px;
+}
+
+.nav-social ul {
+    margin: 0 0 30px;
+}
+
+.nav-social svg {
+    height: 16px;
+    fill: #fff;
+}
+
+.nav-social a:hover svg {
+    fill: #ff0;
+}
+
+.nav-social a {
+    width: 48px;
+    height: 48px;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 24px;
+    margin: 0 12px;
+}
+
+.facebook {
+    background-color: #3b5999;
+}
+
+.twitter {
+    background-color: #55acee;
+}
+
+.instagram {
+    background-color: #e4405f;
+}
+
+.nav-main {
+    margin-right: -14px;
+}
+
+.nav-main ul {
+    margin-bottom: 0;
+}
+
+.nav-main li {
+    margin: 0 14px;
+}
+
+.nav-main a,
+.nav-main a:visited,
+.nav-main a:active {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(105, 105, 105);
+}
+
+.nav-main a:hover {
+    color: rgb(38, 166, 209);
+}
+
+
+/*  Section hero  */
+#hero {
+    background-image: url(../img/feuilles.jpg);
+    padding: 150px 0;
+    background-size: cover;
+}
+
+
+
+/*  Section services  */
+
+#services .row {
+    margin-top: 90px;
+}
+
+.service-img {
+    height: 64px;
+}
+
+/*  Section fonctionnalites  */
+#fonctionnalites {
+    padding: 80px 0;
+    background-color: rgb(246, 246, 246);
+}
+
+#fonctionnalites h2 {
+    margin-top: 60px;
+}
+
+/*  Section newsletter  */
+
+#newsletter {
+    background-color: rgb(38, 166, 209);
+    padding: 110px 0;
+}
+
+#newsletter input {
+    margin: 0 14px;
+}

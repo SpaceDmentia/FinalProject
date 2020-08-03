@@ -1,0 +1,352 @@
+/*  Général  */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(105, 105, 105);
+    height: auto;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.logo {
+    float: left;
+    width: 400px;
+    margin-left: -60px;
+    margin-top: -80px;
+}
+
+.container {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.row {
+    margin: 0 -10px;
+}
+
+.col {
+    margin: 0 10px;
+    float: left;
+}
+
+.col--33 {
+    width: 300px;
+}
+
+.col--501,
+.col--502,
+.col--503,
+.col--50 {
+    width: 460px;
+}
+
+.col--501,
+.col--502 {
+    margin-bottom: 100px;
+}
+
+.is-dark {
+    color: #fff;
+}
+
+.is-centered {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3.05em;
+    /* 55px/18px (18=format de base sur le web) */
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 1.66667em;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    color: rgb(43, 65, 77);
+}
+
+p {
+    line-height: 1.666667em;
+}
+
+hr {
+    width: 20px;
+    height: 2px;
+    background-color: rgb(204, 208, 210);
+    border: none;
+}
+
+::placeholder {
+    color: rgb(204, 208, 210);
+}
+
+input {
+    padding: 18px 30px;
+    border-radius: 4px;
+    border: 1px solid #fff;
+}
+
+input[type="submit"] {
+    border: none;
+}
+
+.btn {
+    font-size: 1.11111em;
+    color: #A26749;
+    text-transform: uppercase;
+    background-color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 18px 30px;
+    border-radius: 4px;
+    display: table-cell;
+}
+
+.floatl {
+    float: left;
+    width: 400px;
+    margin-left: -60px;
+    margin-top: -80px;
+}
+
+.floatr {
+    float: right;
+}
+
+#hero,
+#services,
+#produits,
+#blog,
+#newsletter {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+/*  Header  */
+header {
+    padding: 70px 0 25px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+.nav-social {
+    text-align: right;
+}
+
+.nav-social ul {
+    margin: 0 auto;
+}
+
+.nav-social svg {
+    height: 16px;
+    fill: #fff;
+}
+
+.nav-social a {
+    width: 48px;
+    height: 48px;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 24px;
+    margin: 0 12px;
+}
+
+.facebook,
+.twitter,
+.instagram {
+    background-color: #A26749;
+}
+
+.facebook:hover,
+.twitter:hover,
+.instagram:hover {
+    background-color: #794E38;
+}
+
+.nav-main {
+    margin-right: -14px;
+}
+
+.nav-main ul {
+    margin-bottom: 0;
+}
+
+.nav-main li {
+    margin: 0 14px;
+}
+
+.nav-main a,
+.nav-main a:visited,
+.nav-main a:active {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(105, 105, 105);
+}
+
+.nav-main a:hover {
+    color: #9A3213;
+    font-weight: bold;
+}
+
+
+/*  Section hero  */
+#hero {
+    background-image: url(../img/air.jpg);
+    padding: 150px 0;
+    background-size: cover;
+}
+
+.slogan {
+    animation-name: appear;
+    animation-duration: 6s;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+/*  Section services  */
+
+#services .row {
+    margin-top: 90px;
+}
+
+.service-img {
+    height: 64px;
+}
+
+/*  Section produits  */
+#produits {
+    padding: 80px 0;
+    background-color: rgb(246, 246, 246);
+}
+
+#produits h2 {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+
+/*  Section newsletter  */
+
+#newsletter {
+    background-color: #794E38;
+    padding: 110px 0;
+}
+
+#newsletter input {
+    margin: 0 14px;
+}
+
+#newsletter p {
+    margin-top: 3%;
+}
+
+/* tablette et mobile*/
+@media screen and (max-width: 1024px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    #hero p {
+        text-align: left;
+    }
+
+    .slogan {
+        animation: none;
+    }
+
+    .floatl {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .nav-social {
+        display: none;
+    }
+
+    .floatr .nav-main {
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    .floatr {
+        float: none;
+    }
+
+    p,
+        {
+        font-size: 23px;
+        line-height: 1.666667em;
+        text-align: center;
+    }
+
+    .specs {
+        font-size: 23px;
+        line-height: 1.666667em;
+    }
+
+    h2 {
+        margin-bottom: 2em;
+    }
+
+    #hero,
+    #services,
+    #produits,
+    #blog,
+    #newsletter {
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .col--33 {
+        width: auto;
+        margin-bottom: 30px;
+    }
+
+    #produits .col--501 p,
+    #produits .col--502 p {
+        margin-bottom: 100px;
+    }
+
+    #produits p {
+        text-align: justify;
+    }
+
+    .container {
+        margin: 0 auto;
+        margin-left: 20%;
+        margin-right: 20%;
+
+    }
+
+    #newsletter input {
+        margin-bottom: 5%;
+    }
+
+}
